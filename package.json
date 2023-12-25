@@ -1,6 +1,6 @@
 {
   "name": "@zappr/plyr",
-  "version": "3.7.8",
+  "version": "3.7.8-test",
   "description": "Versioni leggermente modificate (e prebuildate) di Plyr (@sampotts/plyr) per Zappr",
   "main": "dist/plyr.js",
   "types": "src/js/plyr.d.ts",
