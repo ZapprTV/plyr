@@ -17,17 +17,12 @@ jobs:
       uses: actions/setup-node@v3
       with:
         node-version: "20.x"
+        registry-url: https://registry.npmjs.org/
 
     - name: Build
       run: |
         npm install --force
         gulp build
-
-    - name: Prepare to publish to NPM
-      uses: actions/checkout@v3
-      with:
-        node-version: "20.x"
-        registry-url: https://registry.npmjs.org/
 
     - name: Publish to NPM
       run: npm publish --access public
